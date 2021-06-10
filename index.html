@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body style="background-color: #DEEDF0">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #47597E;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: Black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: Black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #D8B384;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F4C7AB;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #F4C7AB;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+
+<body style="background-color: #DEEDF0">
+
+<div class="navbar">
+  <a href="index1.html">Home</a>
+  <a href="contact-me.html">Contact Me</a>
+  <a href="About.html">About</a>
+  <a href="Login.html">Login</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Products
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="All.html">All</a>
+    <a href="veg.html">vegetarian</a>
+    <a href="non veg.html">nonvegetraian</a>
+
+
+  </div>
+
+
+
+
+  </div>
+
+</div>
+
+<div class="topnav-right">
+
+
+<div class="search-container">
+  <form>
+<input type="text" placeholder=" Search...." name="search">
+<button type="submit">Submit</button>
+</form>
+    <div class="img">
+      <img src="images/rasoiwide.png" alt="photo of spice" class="center"height="350"width="1150" /><marquee>Rasoi wide</marquee>
+  </div>
+  </div>
+  <div class="main">
+
+
+<h3>Rasoi wide</h3>
+<p><em> Founder and CEO of <strong><a href="https://www.youtube.com/watch?v=i8Ws8l6_zLs/"><em>Rasoi Wide</em></a>/<strong></em></p>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>
